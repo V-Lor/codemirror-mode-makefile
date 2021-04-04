@@ -1,0 +1,53 @@
+<!doctype html>
+
+<title>CodeMirror: Makefile mode</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="../../addon/edit/matchbrackets.js"></script>
+<script src="makefile.js"></script>
+<style>.CodeMirror { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }</style>
+<div id=nav>
+  <a href="https://codemirror.net"><h1>CodeMirror</h1><img id=logo src="../../doc/logo.png" alt=""></a>
+
+  <ul>
+    <li><a href="../../index.html">Home</a>
+    <li><a href="../../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/codemirror/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a href="../index.html">Language modes</a>
+    <li><a class=active href="#">Makefile</a>
+  </ul>
+</div>
+
+<article>
+<h2>Makefile mode</h2>
+<form><textarea id="code" name="code">
+objects = foo.o bar.o all.o
+all: $(objects)
+
+foo.o: foo.c
+bar.o: bar.c
+all.o: all.c
+
+all.c:
+    echo "int main() { return 0; }" > all.c
+
+%.c:
+    touch $@
+
+clean:
+    rm -f *.c *.o all
+</textarea></form>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        matchBrackets: true
+      });
+    </script>
+
+    <p><strong>MIME types defined:</strong> <code>text/x-makefile</code>.</p>
+
+  </article>
