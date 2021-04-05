@@ -1,0 +1,23 @@
+{
+  "name": "codemirror-mode-makefile",
+  "version": "1.0.0",
+  "description": "Makefile mode for CodeMirror",
+  "main": "makefile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V-Lor/codemirror-mode-makefile.git"
+  },
+  "keywords": [
+    "codemirror",
+    "makefile"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/V-Lor/codemirror-mode-makefile/issues"
+  },
+  "homepage": "https://github.com/V-Lor/codemirror-mode-makefile#readme",
+  "dependencies": {
+    "codemirror": "^5.60.0"
+  }
+}
