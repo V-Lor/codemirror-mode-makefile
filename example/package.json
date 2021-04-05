@@ -1,0 +1,12 @@
+{
+  "name": "codemirror-mode-makefile-example",
+  "version": "1.0.0",
+  "description": "Example of using CodeMirror with Makefile mode",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "^5.60.0",
+    "codemirror-mode-makefile": "^1.0.0"
+  }
+}
